@@ -1,0 +1,481 @@
+@charset "utf-8";
+body{font:12px/20px "宋体";color:#666;word-wrap:break-word;}
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0;}
+html,body{height: 100%;}
+li{list-style:none;}
+a,u,del,s{text-decoration:none;color:#666;}
+a img{border:0;}
+i,em{font-style:normal;}
+b,th,strong{font-weight:normal;}
+img{vertical-align:middle; padding: 0;margin: 0;} 
+table{border-collapse:collapse;}
+input,textarea{outline:none;}
+
+.cu{cursor:pointer;}
+.clear{zoom:1;}
+.clear:after{content:"";clear:both;display:block;height:0;overflow:hidden;visibility:hidden;}
+.clearx{clear:both;}
+.over{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.pl_1{position:relative;top:-1px;}
+.pl_2{position:relative;top:-2px;}
+
+/*头部*/
+.tui-top{
+	width: 100%;
+	background: #f3f3f3;
+}
+.container{
+	width: 1220px;
+	margin: 0 auto;
+}
+.top-container{
+	height: 30px;
+	line-height: 30px;
+}
+.top-container a:hover{
+	color: red;
+}
+.top-container .top-login{
+	float: left;
+	width: 50%;
+}
+.top-container .top-login .top-index{
+	padding-left: 25px;
+	background: url(../img/index_ico.png) no-repeat left center;
+}
+.top-container .top-login span{
+	margin: 0 6px 0 20px;
+}
+.top-container .topr-con{
+	float: right;
+	width: 50%;
+}
+.topr-con ul{
+	float: right;
+}
+.topr-con ul li{
+	display: inline-block;
+	height: 26px;
+	line-height: 26px;
+	text-align: right;
+	padding-left: 24px;
+	background: url(../img/tuitop_ico.png);
+	background-repeat: no-repeat;
+}
+.topr-con ul li.topr-con2{
+	background-position: left -54px;
+}
+.head .market-wrap{
+	height: 80px;
+	margin-top: 27px;
+}
+.logo,.market-wrap .search,.market-wrap .more-button{
+	float: left;
+}
+.logo{
+	width: 244px;
+	height: 80px;
+}
+.market-wrap .search{
+	height: 80px;
+	width: 630px;
+	padding-left: 50px;
+}
+.market-wrap .search-wrap{
+	height: 40px;
+	margin: 0 0 7px;
+}
+.market-wrap .input-wrap{
+	float: left;
+	height: 33px;
+	width: 528px;
+	border: 3px solid #D71E00;
+	margin-right: 2px;
+}
+.market-wrap .input-wrap input{
+	width: 95%;
+	height: 100%;
+	padding-left: 8px;
+	outline: none;
+	border: 0;
+}
+.market-wrap .search-wrap a{
+	float: left;
+	width: 94px;
+	height: 39px;
+	text-align: center;
+	color: white;
+	font:18px/39px "微软雅黑";
+	background-color: #D71E00;
+}
+.market-wrap .search-hots{
+	height: 18px;
+}
+.market-wrap .search-hots li{
+	float: left;
+	margin-right: 8px;
+	color: #484848;
+}
+.market-wrap .search-hots .search-hots-title{
+	font-weight: bolder;
+	color: #333;
+}
+.search .search-hots ul .hots a{
+	color: #D71E00;
+}
+.market-wrap .more-button{
+	height: 80px;
+	width: 234px;
+	padding-left: 46px;
+}
+.market-wrap .more-button a{
+	margin-left: 15px;
+}
+/*导航*/
+.mallnav{
+	border-bottom: 2px solid #D71E00;
+}
+.mallnav .index-mallnav{
+	position: relative;
+	height: 33px;
+	line-height: 33px;
+}
+.index-mallnav .nav-cate,
+.index-mallnav ul{
+	float: left;
+}
+.index-mallnav .nav-cate .shop-cate{
+	display: block;
+	width: 238px;
+	height: 33px;
+	line-height: 33px;
+	color: white;
+	font-size: 16px;
+	font-family: Tahoma, Arial, Hiragino Sans GB, Microsoft Yahei;
+	text-align: center;
+	background-color: #aa1800;
+}
+.index-mallnav .nav-cate .catelog-list{
+	position: absolute;
+	top:35px;
+	width: 238px;
+	height: 511px;
+	background-color: #222;
+}
+.nav-cate .catelog-list .cata-group dl{
+	position: relative;
+	width: 206px;
+	height: 60px;
+	margin: 0 auto;
+	border-bottom: 1px dotted #d6d6d6;
+}
+.nav-cate .catelog-list .cata-group .cata-group-sub{
+	position: absolute;
+	left: 238px;
+	top: 0;
+	width: 708px;
+	min-height: 511px;
+	z-index: 2;
+	background: white;
+	padding: 2px 2px 36px 20px;
+	border: 2px solid #AA1800;
+	display: none;
+}
+
+.nav-cate .catelog-list .cata-group dl:hover dt a{
+	color:#D71E00;
+}
+.nav-cate .catelog-list .cata-group:hover{
+	background-color: white;
+}
+.nav-cate .catelog-list .cata-group:hover dd a{
+	color: #333333;
+}
+.nav-cate .catelog-list .cata-group dl dt{
+	width: 206px;
+	height: 30px;
+	line-height: 30px;
+	background: url(../img/channel_ico2.png) no-repeat right center;
+}
+.nav-cate .catelog-list .cata-group dl dt i{
+	float: left;
+	display: inline-block;
+	width: 22px;
+	height: 33px;
+	margin: -3px 8px 0 0 ;
+	background: url(../img/ecd_cate_ico.png) no-repeat ;
+}
+.nav-cate .catelog-list .cata-group:hover dl dt i{
+	background: url(../img/ecd_cate_icoh.png) no-repeat;
+}
+.nav-cate .catelog-list .cata-group dl dt .i_2{
+	background: url(../img/ecd_cate_ico.png) no-repeat -22px center;
+}
+.nav-cate .catelog-list .cata-group:hover dl dt .i_2{
+	background: url(../img/ecd_cate_icoh.png) no-repeat -22px center;
+}
+.nav-cate .catelog-list .cata-group:hover dl dt .i_3{
+	background: url(../img/ecd_cate_icoh.png) no-repeat -48px center;
+}
+.nav-cate .catelog-list .cata-group dl dt .i_3{
+	background: url(../img/ecd_cate_ico.png) no-repeat -48px center;
+}
+.nav-cate .catelog-list .cata-group dl dt .i_4{
+	background: url(../img/ecd_cate_ico.png) no-repeat -72px center;
+}
+.nav-cate .catelog-list .cata-group:hover dl dt .i_4{
+	background: url(../img/ecd_cate_icoh.png) no-repeat -72px center;
+}
+.nav-cate .catelog-list .cata-group dl dt .i_5{
+	background: url(../img/ecd_cate_ico.png) no-repeat -100px center;
+}
+.nav-cate .catelog-list .cata-group:hover dl dt .i_5{
+	background: url(../img/ecd_cate_icoh.png) no-repeat -100px center;
+}
+.nav-cate .catelog-list .cata-group dl dt .i_6{
+	background: url(../img/ecd_cate_ico.png) no-repeat -128px center;
+}
+.nav-cate .catelog-list .cata-group:hover dl dt .i_6{
+	background: url(../img/ecd_cate_icoh.png) no-repeat -128px center;
+}
+.nav-cate .catelog-list .cata-group dl dt .i_7{
+	background: url(../img/ecd_cate_ico.png) no-repeat -155px center;
+}
+.nav-cate .catelog-list .cata-group:hover dl dt .i_7{
+	background: url(../img/ecd_cate_icoh.png) no-repeat -155px center;
+}
+.nav-cate .catelog-list .cata-group dl dt .i_8{
+	background: url(../img/ecd_cate_ico.png) no-repeat -180px center;
+}
+.nav-cate .catelog-list .cata-group:hover dl dt .i_8{
+	background: url(../img/ecd_cate_icoh.png) no-repeat -180px center;
+}
+
+.cata-group-sub-content-img{
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	height: 520px;
+	width: 200px;
+}
+.cata-group-sub-content-img img{
+	width: 200px;
+	height: 250px;
+	margin-bottom: 10px;
+	float: left;
+}
+
+.cata-group-sub-content{
+	width: 500px;
+	height: 89px;
+	margin-top: 15px;
+	padding: 10px 0;
+	border-top:1px dotted #d6d6d6;
+}
+.cata-group-sub-content p{
+	font-weight: bold;
+	color:#D71E00;
+}
+.nav-cate .catelog-list .cata-group dl dt a{
+	float: left;
+	color: white;
+}
+.nav-cate .catelog-list .cata-group dl dd a{
+	color: white;
+}
+.nav-cate .catelog-list .cata-group dl dd a:hover{
+	color:#FF0000;
+}
+.index-mallnav ul li{
+	float: left;
+	padding-left: 13px;
+}
+.index-mallnav ul li a{
+	display: block;
+	padding: 0 13px;
+	line-height: 33px;
+	font-size: 16px;
+	font-family: Tahoma,Arial,Hiragino Sans GB,Microsoft Yahei;
+}
+.index-mallnav ul li a:hover{
+	background-color: #AA1800;
+	color: white;
+}
+.index-mallnav ul li.hots{
+	position: relative;
+}
+.index-mallnav ul li b{
+	width: 25px;
+	height: 16px;
+	background: url(../img/tuihota.png) no-repeat;
+	position: absolute;
+	right:-10px;
+	top: -6px;
+}
+/*轮播图插件CSS部分*/
+.nav-banner1 .img-wrapper,
+.nav-banner2 .img-wrapper{
+	position: relative;
+	width: 100%;
+}
+.nav-banner1 .img-wrapper img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+.nav-banner1 .circles,
+.nav-banner2 .circles{
+	position: absolute;
+	bottom: 20px;
+	height: 20px;
+	line-height: 20px;
+	width: 100%;
+	text-align: center;
+}
+.nav-banner1 .circles .circle-wrapper,
+.nav-banner2 .circles .circle-wrapper{
+	display: inline-block;
+}
+.nav-banner1 .circles .circle-wrapper .circle-item,
+.nav-banner2 .circles .circle-wrapper .circle-item{
+	float: left;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	border-radius: 50%;
+	background: #F3F3F3;
+	text-align: center;
+	cursor: default;
+}
+.nav-banner1 .circles .circle-wrapper .circle-item.active,
+.nav-banner2 .circles .circle-wrapper .circle-item.active{
+	background: #c33;
+	color: white;
+}
+.nav-banner1 .arrow,
+.nav-banner2 .arrow{
+	position: absolute;
+	top: 50%;
+	font-size: 25px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background: rgba(0,0,0,0.3);
+	margin-top: -20px;
+	color:white;
+	font-weight: 700;
+	cursor: pointer;
+}
+.nav-banner1 .arrow-left,
+.nav-banner2 .arrow-left{
+	left: 0;
+}
+.nav-banner1 .arrow-right,
+.nav-banner2 .arrow-right{
+	right: 0;
+}
+/*轮播图插件结束*/
+/*回到顶部*/
+.toTop{
+	position: fixed;
+	bottom: 20px;
+	right: 10px;
+	width: 50px;
+	height: 50px;
+	background: url(../img/toTop1.png) no-repeat center center;
+	opacity: 0.8;
+	cursor: pointer;
+	display: none;
+}
+.toTop:hover{
+	background: url(../img/toTop2.gif);
+	opacity: 1;
+}
+/*侧边栏*/
+/*.sidebar{
+	position: fixed;
+	right: -173px;
+	top: 50%;
+	margin-top: -225px;
+	width: 209px;
+	height: 445px;
+	border:1px solid red;
+}*/
+.sidebar-img1{
+	position: fixed;
+	right: 0;
+	top: 50%;
+	width: 42px;
+	height: 128px;
+	margin-top: -64px;
+	cursor: pointer;
+}
+.sidebar-img1 img{
+	width: 100%;
+	height: 100%;
+}
+.sidebar-img2{
+	position: fixed;
+	right: -209px;
+	top: 50%;
+	width: 209px;
+	height: 445px;
+	margin-top: -222px;
+	cursor: pointer;
+}
+.sidebar-img2 img{
+	width: 100%;
+	height: 100%;
+}
+/*foot*/
+.foot{
+	border-top: 2px solid #AA1800;
+	margin-top: 20px;
+}
+.foot .help{
+	height: 304px;
+	background: url(../img/tuifooter2.jpg) no-repeat center center;
+}
+.foot .help-content{
+	padding-top: 175px;
+	width: 920px;
+	height: 138px;
+	float: left;
+}
+.foot .help-content dl{
+	float: left;
+	margin:0 45px 70px;
+}
+.foot .help-content dl dt{
+	color: #484848;
+	margin-bottom: 10px;
+}
+.foot-content .foot-img{
+	width: 353px;
+	height: 49px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.foot-content ul{
+	width: 320px;
+	height: 22px;
+	margin: 0 auto;
+}
+.foot-content ul li{
+	float: left;
+	margin: 0 5px;
+} 
+.foot-content .foot-txt{
+	width: 516px;
+	text-align: center;
+	margin: 0 auto;
+}
+.foot-content .foot-txt p{
+	margin-bottom: 10px;
+}
+
+
+
+
