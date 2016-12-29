@@ -6,5 +6,5 @@
 
 	//动态的改变根元素字体大小：
 
-	doc.style.fontSize = curDeviceWidth * (30/320) + 'px';
+	doc.style.fontSize = curDeviceWidth * (22/414) + 'px';
 })(document);
