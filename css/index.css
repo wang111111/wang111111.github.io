@@ -21,6 +21,10 @@ body .music-logo {
   right: 0.66667rem;
   z-index: 999; }
 
+.swiper-slide{
+	width:100%;
+	height:100%;
+}
 #theMedia {
   width: 100%;
   height: 100%; }
