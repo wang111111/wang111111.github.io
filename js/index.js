@@ -1,4 +1,4 @@
- var mySwiper = new Swiper ('#theMedia', {
+new Swiper ('#theMedia', {
     direction: 'vertical',
     loop: true,
      onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
@@ -10,7 +10,7 @@
 	  } 
   })
  //music
- var music = {
+var music = {
  	btn:$('.music-logo'),
  	au:$('#audio'),
  	init:function(){
@@ -20,10 +20,10 @@
  		var that = this;
  		this.btn.click(function(){
  			
-	 	})
+ 	 	})
  	}
- }
-music.init();
+ } 
+//music.init();
 //page2 ball
 var ball = {
 	camera : $('#page2-ball'),
